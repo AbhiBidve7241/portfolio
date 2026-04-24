@@ -1,91 +1,99 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import ShapeGrid from './ShapeGrid';
-import ShinyText from './ShinyText';
 import InteractiveBackground from './UI/InteractiveBackground';
 
 const EntryScreen = ({ onEnter, content }) => {
+  const isDark = localStorage.getItem('theme') === 'dark';
+
   return (
-    <div className="h-screen relative bg-background text-text overflow-hidden">
+    <div className="h-screen w-full relative overflow-hidden text-text">
 
-if (localstorage.theme===dark) {
-  <div className="absolute inset-0 opacity-30">
-        <ShapeGrid 
-          speed={0.3}
-          squareSize={50}
-          direction="diagonal"
-          borderColor="rgba(255,255,255,0.08)"
-          hoverFillColor="rgba(99,102,241,0.2)"
-        />
-      </div>
-}else{
-<div className="absolute inset-0 z-0">
-        <InteractiveBackground theme={localStorage.theme} />
-      </div>
-}
-      {/* Background */}
-      
-
-      
-
-      <div className="relative z-10 flex items-center justify-center h-full px-6">
-        <motion.div
-          initial={{ y: 24, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.55, ease: 'easeOut' }}
-          className="glass rounded-3xl border border-border shadow-lg p-10 max-w-xl w-full text-center"
-        >
-          <motion.img
-            src="src\assets\avatar.jpeg"
-            alt="avatar"
-            className="w-28 h-28 rounded-full mx-auto mb-6 border border-border"
-            initial={{ scale: 0.8, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 0.45, ease: 'easeOut' }}
+      {/* BACKGROUND */}
+      {isDark ? (
+        <div className="absolute inset-0 opacity-40">
+          <ShapeGrid
+            speed={0.3}
+            squareSize={60}
+            direction="diagonal"
+            borderColor="rgba(255,255,255,0.08)"
+            hoverFillColor="rgba(99,102,241,0.25)"
           />
+        </div>
+      ) : (
+        <InteractiveBackground theme="light" />
+      )}
 
-          <div className="text-4xl font-semibold tracking-tight mb-2">
-            <ShinyText text={content.personal.name} speed={3} color="var(--color-text)" />
-          </div>
+      {/* MAIN */}
+      <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
 
-          <p className="text-muted mb-8">{content.personal.title}</p>
+        {/* AVATAR */}
+        <motion.img
+          src="Avatar2.png"
+          alt="avatar"
+          className="w-28 h-28 rounded-full mb-6 object-cover shadow-xl"
+          initial={{ scale: 0.8, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+        />
 
-          <motion.button
-            onClick={onEnter}
-            whileHover={{ scale: 1.03 }}
-            whileTap={{ scale: 0.97 }}
-            className="glass rounded-2xl px-8 py-3 shadow-lg border border-border text-sm font-semibold transition"
-          >
-            Enter Portfolio
-          </motion.button>
+        {/* NAME */}
+        <h1 className="
+          text-4xl md:text-5xl font-bold
+          bg-gradient-to-r from-indigo-400 via-purple-400 to-cyan-400
+          text-transparent bg-clip-text
+        ">
+          {content.personal.name}
+        </h1>
 
-          <div className="mt-6 flex flex-col sm:flex-col items-center gap-3">
-            <a
-              href={content.personal.resume}
-              target="_blank"
-              rel="noreferrer"
-              className="glass rounded-2xl px-4 py-2 text-sm shadow-lg transition hover:shadow-xl"
-            >
-              Resume
-            </a>
-            <a
-              href={content.personal.github}
-              target="_blank"
-              rel="noreferrer"
-              className="glass rounded-2xl px-4 py-2 text-sm shadow-lg transition hover:shadow-xl"
-            >
-              GitHub
-            </a>
-            <a
-              href={content.personal.linkedin}
-              target="_blank"
-              rel="noreferrer"
-              className="glass rounded-2xl px-4 py-2 text-sm shadow-lg transition hover:shadow-xl"
-            >
-              LinkedIn
-            </a>
-          </div>
-        </motion.div>
+        {/* TITLE */}
+        <p className="mt-3 text-muted text-sm md:text-base">
+          {content.personal.title}
+        </p>
+
+        {/* 🔥 ENTER BUTTON */}
+        <motion.button
+          onClick={onEnter}
+          whileHover={{ scale: 1.06 }}
+          whileTap={{ scale: 0.95 }}
+          className="
+            mt-8 px-10 py-3 rounded-full
+            font-semibold text-white
+            bg-gradient-to-r from-indigo-500 via-purple-500 to-cyan-500
+            shadow-xl hover:shadow-2xl transition
+          "
+        >
+          Enter Portfolio
+        </motion.button>
+
+        {/* 🔥 SOCIAL ICONS (PNG) */}
+        <div className="mt-8 flex items-center gap-6">
+
+          <a href={content.personal.github} target="_blank" rel="noreferrer">
+            <img
+              src="/gitHub.png"
+              alt="github"
+              className="w-10 h-10 opacity-80 hover:opacity-100 hover:scale-110 transition"
+            />
+          </a>
+
+          <a href={content.personal.linkedin} target="_blank" rel="noreferrer">
+            <img
+              src="/linkedIn.png"
+              alt="linkedin"
+              className="w-10 h-10 opacity-80 hover:opacity-100 hover:scale-110 transition"
+            />
+          </a>
+
+          {/* <a href={content.personal.resume} target="_blank" rel="noreferrer">
+            <img
+              src="/resume.png"
+              alt="resume"
+              className="w-6 h-6 opacity-80 hover:opacity-100 hover:scale-110 transition"
+            />
+          </a> */}
+
+        </div>
+
       </div>
     </div>
   );
