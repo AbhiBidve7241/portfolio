@@ -45,7 +45,7 @@ const DesktopLayout = ({ activeSection, setActiveSection, theme, toggleTheme, au
           {/* Header */}
           <div className="px-6 py-6 border-b border-border flex items-center gap-3">
             <img 
-              src="/src/assets/avatar.jpeg" 
+              src="/avatar.jpeg" 
               alt="avatar"
               className="w-10 h-10 rounded-full object-cover border border-border"
             />

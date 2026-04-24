@@ -29,7 +29,7 @@ const About = () => {
           <div className="flex-shrink-0">
             <div className="w-24 h-24 rounded-full bg-white/5 border border-white/10 flex items-center justify-center">
               <img 
-              src="/src/assets/PP.jpeg" 
+              src="/PP.jpeg" 
               alt="avatar"
               className="w-24 h-24 rounded-full object-cover border border-border"
             />

@@ -4,7 +4,9 @@ import ShapeGrid from './ShapeGrid';
 import InteractiveBackground from './UI/InteractiveBackground';
 
 const EntryScreen = ({ onEnter, content }) => {
-  const isDark = localStorage.getItem('theme') === 'dark';
+  const isDark =
+  typeof window !== "undefined" &&
+   localStorage.getItem('theme') === 'dark';
 
   return (
     <div className="h-screen w-full relative overflow-hidden text-text">
