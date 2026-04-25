@@ -37,8 +37,11 @@ const Gallery = () => {
         ))}
       </div>
 
+
+      <h1 className='flex justify-center'>Will Upload Soon</h1>
+
       {/* GRID */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+      {/* <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
 
         {items.map((item, index) => (
           <motion.div
@@ -49,7 +52,7 @@ const Gallery = () => {
           >
             <Card hover className="overflow-hidden">
 
-              {/* IMAGE */}
+            
               <div className="aspect-[4/3] overflow-hidden">
                 <img
                   src={item.path}
@@ -58,7 +61,7 @@ const Gallery = () => {
                 />
               </div>
 
-              {/* TITLE */}
+             
               <CardContent className="p-2">
                 <p className="text-xs text-center text-muted">
                   {item.title}
@@ -69,7 +72,7 @@ const Gallery = () => {
           </motion.div>
         ))}
 
-      </div>
+      </div> */}
 
     </div>
   );

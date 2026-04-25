@@ -54,7 +54,7 @@ const About = () => {
             <div className="flex flex-wrap gap-3">
           <Button
   variant="primary"
-  onClick={() => window.location.href = "mailto:your@email.com"}
+  onClick={() => window.location.href = "mailto:abhishekbidwe123@gmail.com"}
 >
   Contact Me
 </Button>

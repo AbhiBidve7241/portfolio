@@ -39,7 +39,7 @@ export const content = {
       "Secure API integration",
       "Scalable backend using Spring Boot"
     ],
-    live: "#",
+    live: "https://github.com/AbhiBidve7241/societyOne",
     github: "https://github.com/AbhiBidve7241/societyOne",
     icon: "FullStack"
   },
@@ -56,7 +56,7 @@ export const content = {
       "Admin dashboard for management",
    
     ],
-    live: "#",
+    live: "https://campfireabhi.vercel.app/",
     github: "https://github.com/AbhiBidve7241/campFire",
     icon: "Store"
   },
@@ -72,9 +72,36 @@ export const content = {
       "Component-based architecture",
       "Backend integration with Spring Boot"
     ],
+    live: "#",
     github: "https://github.com/AbhiBidve7241/campusBountyFE",
     icon: "Frontend"
   },
+  {
+    id: 7,
+    title: "Zomato Clone UI",
+    description: "Frontend clone of Zomato with focus on UI/UX design and layout structuring.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    features: [
+      "Pixel-perfect UI replication",
+      "Responsive layout",
+      "Modern design system"
+    ],
+    live: "https://abhibidve7241.github.io/Zomato-clone/",
+    github: "https://github.com/AbhiBidve7241/Zomato-clone",
+      icon: "UI"},
+       {
+    id: 8,
+    title: "Amazon Clone UI",
+    description: "Frontend clone of Amazon with focus on UI/UX design and layout structuring.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    features: [
+      "Pixel-perfect UI replication",
+      "Responsive layout",
+      "Modern design system"  
+    ],
+    live: "https://abhibidve7241.github.io/Amazon-Clone/",
+    github: "https://github.com/AbhiBidve7241/Amazon-clone",
+      icon: "UI"},
 
   {
     id: 4,
@@ -86,9 +113,11 @@ export const content = {
       "Data management components",
       "Responsive layout"
     ],
+    live: "https://github.com/AbhiBidve7241/reactTPOAdmin",
     github: "https://github.com/AbhiBidve7241/reactTPOAdmin",
     icon: "Dashboard"
   },
+
 
   {
     id: 5,
@@ -116,32 +145,9 @@ export const content = {
     ],
     github: "https://github.com/AbhiBidve7241/ReduxCartPage",
     icon: "State"
-  },
+  }
 
-  {
-    id: 7,
-    title: "Zomato Clone UI",
-    description: "Frontend clone of Zomato with focus on UI/UX design and layout structuring.",
-    tech: ["HTML", "CSS", "JavaScript"],
-    features: [
-      "Pixel-perfect UI replication",
-      "Responsive layout",
-      "Modern design system"
-    ],
-    github: "https://github.com/AbhiBidve7241/Zomato-clone",
-      icon: "UI"},
-       {
-    id: 8,
-    title: "Amazon Clone UI",
-    description: "Frontend clone of Amazon with focus on UI/UX design and layout structuring.",
-    tech: ["HTML", "CSS", "JavaScript"],
-    features: [
-      "Pixel-perfect UI replication",
-      "Responsive layout",
-      "Modern design system"  
-    ],
-    github: "https://github.com/AbhiBidve7241/Amazon-clone",
-      icon: "UI"}
+      
 //   },
 
 //   {

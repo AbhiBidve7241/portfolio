@@ -128,7 +128,7 @@ const Contact = () => {
           </Card>
         </motion.div>
 
-        {/* Contact Form */}
+        {/* Contact Form
         <motion.div
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
@@ -224,7 +224,7 @@ const Contact = () => {
               </p>
             </CardContent>
           </Card>
-        </motion.div>
+        </motion.div> */}
       </div>
 
       {/* Quick Response Note */}

@@ -11,8 +11,17 @@ import InteractiveBackground from "./components/UI/InteractiveBackground";
 export default function App() {
   const [showEntry, setShowEntry] = useState(true);
   const [activeSection, setActiveSection] = useState('about');
- const [theme, setTheme] = useState(() => {
-  return localStorage.getItem('theme') ?? 'dark';
+const [theme, setTheme] = useState(() => {
+  const saved = localStorage.getItem('theme');
+  if (saved) return saved;
+
+  const isMobile = /Mobi|Android/i.test(navigator.userAgent);
+
+  if (isMobile) return 'light';
+
+  return window.matchMedia('(prefers-color-scheme: dark)').matches
+    ? 'dark'
+    : 'light';
 });
 
   // Music state
