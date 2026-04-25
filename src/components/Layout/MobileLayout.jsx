@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import {
   Sun, Moon,
@@ -15,8 +15,7 @@ import Experience from '../Sections/Experience';
 import Skills from '../Sections/Skills';
 import Resume from '../Sections/Resume';
 import Contact from '../Sections/Contact';
-import Gallery from '../Sections/Gallery'
-
+import Gallery from '../Sections/Gallery';
 
 import ClockWidget from '../UI/ClockWidget';
 import { StatsWidget } from '../UI/StatsWidget';
@@ -39,6 +38,27 @@ const apps = [
 const MobileLayout = ({ theme, toggleTheme, audioRef, playing, setPlaying }) => {
   const [activeApp, setActiveApp] = useState(null);
 
+  /* 🔥 HANDLE MOBILE BACK BUTTON */
+  useEffect(() => {
+    const handleBack = () => {
+      if (activeApp) {
+        setActiveApp(null);
+      }
+    };
+
+    window.addEventListener("popstate", handleBack);
+
+    return () => {
+      window.removeEventListener("popstate", handleBack);
+    };
+  }, [activeApp]);
+
+  /* 🔥 PUSH HISTORY WHEN OPEN APP */
+  const openApp = (id) => {
+    setActiveApp(id);
+    window.history.pushState({ app: id }, "");
+  };
+
   const renderSection = () => {
     switch (activeApp) {
       case 'about': return <About />;
@@ -47,7 +67,7 @@ const MobileLayout = ({ theme, toggleTheme, audioRef, playing, setPlaying }) => 
       case 'skills': return <Skills />;
       case 'resume': return <Resume />;
       case 'contact': return <Contact />;
-      case 'gallery': return <Gallery/>
+      case 'gallery': return <Gallery />;
       default: return null;
     }
   };
@@ -62,7 +82,13 @@ const MobileLayout = ({ theme, toggleTheme, audioRef, playing, setPlaying }) => 
       >
         {/* Header */}
         <div className="glass px-4 py-3 flex justify-between items-center">
-          <button onClick={() => setActiveApp(null)}>Back</button>
+
+          <button onClick={() => {
+            setActiveApp(null);
+            window.history.back(); // 🔥 sync history
+          }}>
+            Back
+          </button>
 
           <span className="capitalize text-sm font-medium">
             {activeApp}
@@ -76,7 +102,7 @@ const MobileLayout = ({ theme, toggleTheme, audioRef, playing, setPlaying }) => 
           </button>
         </div>
 
-        {/* Scrollable Content */}
+        {/* Content */}
         <div className="flex-1 overflow-y-auto w-full px-4 pb-4">
           {renderSection()}
         </div>
@@ -100,7 +126,6 @@ const MobileLayout = ({ theme, toggleTheme, audioRef, playing, setPlaying }) => 
           </p>
         </div>
 
-        {/* FIXED THEME BUTTON */}
         <button
           onClick={toggleTheme}
           className="glass w-10 h-10 rounded-xl flex items-center justify-center"
@@ -111,9 +136,7 @@ const MobileLayout = ({ theme, toggleTheme, audioRef, playing, setPlaying }) => 
 
       {/* CLOCK */}
       <div className="px-4 mb-3">
-        <ClockWidget >
-          
-        </ClockWidget>
+        <ClockWidget />
       </div>
 
       {/* STATS */}
@@ -129,7 +152,7 @@ const MobileLayout = ({ theme, toggleTheme, audioRef, playing, setPlaying }) => 
           return (
             <motion.button
               key={app.id}
-              onClick={() => setActiveApp(app.id)}
+              onClick={() => openApp(app.id)} // 🔥 FIXED
               whileTap={{ scale: 0.85 }}
               className="glass rounded-2xl p-3 flex flex-col items-center"
             >
@@ -140,8 +163,9 @@ const MobileLayout = ({ theme, toggleTheme, audioRef, playing, setPlaying }) => 
         })}
       </div>
 
-      <div className="flex justify-center ">
-        <MusicWidget 
+      {/* MUSIC */}
+      <div className="flex justify-center">
+        <MusicWidget
           audioRef={audioRef}
           playing={playing}
           setPlaying={setPlaying}
@@ -151,15 +175,10 @@ const MobileLayout = ({ theme, toggleTheme, audioRef, playing, setPlaying }) => 
       {/* FOOTER */}
       <div className="px-4 pb-6 mt-auto">
 
-        {/* MUSIC */}
-        
-
-        {/* SPACE FOR FUTURE ANIMATION */}
         <div className="h-32" />
 
-        {/* 🔥 CLICKABLE BOTTOM NAV */}
+        {/* 🔥 BOTTOM NAV FIXED */}
         <div className="glass rounded-2xl flex justify-around py-2">
-
           {[
             { id: 'about', icon: User },
             { id: 'projects', icon: Folder },
@@ -167,25 +186,17 @@ const MobileLayout = ({ theme, toggleTheme, audioRef, playing, setPlaying }) => 
             { id: 'contact', icon: Mail },
           ].map((item) => {
             const Icon = item.icon;
-            const isActive = activeApp === item.id;
 
             return (
               <button
                 key={item.id}
-                onClick={() => setActiveApp(item.id)}
-                className={`
-                  w-10 h-10 flex items-center justify-center rounded-xl
-                  transition-all
-                  ${isActive
-                    ? 'bg-white/10 text-primary'
-                    : 'text-muted hover:bg-white/10'}
-                `}
+                onClick={() => openApp(item.id)} // 🔥 FIXED
+                className="w-10 h-10 flex items-center justify-center rounded-xl text-muted hover:bg-white/10"
               >
                 <Icon size={20} />
               </button>
             );
           })}
-
         </div>
 
       </div>
