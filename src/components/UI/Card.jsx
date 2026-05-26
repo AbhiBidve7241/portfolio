@@ -21,9 +21,9 @@ export const Card = ({ children, className = '', hover = false, onClick }) => {
         ${className}
       `}
     >
-      <div className="p-6">
-        {children}
-      </div>
+     <div className="p-6 flex flex-col h-full">
+  {children}
+</div>
     </motion.div>
   );
 };

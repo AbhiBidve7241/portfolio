@@ -44,7 +44,26 @@ export const content = {
     icon: "FullStack"
   },
 
+  
+
   {
+  id: 3,
+  title: "NumMatch (Matchmaking Platform POC)",
+  description: "A frontend proof-of-concept for a matchmaking platform focused on user profiles, match discovery, and event-based engagement. Built with a modern UI to simulate real-world dating platform flows and user interactions.",
+  tech: ["React", "Tailwind CSS", "JavaScript", "Vite"],
+  features: [
+    "User registration and profile UI flow",
+    "Match discovery interface (UI-based logic)",
+    "Event and restaurant listing pages",
+    "Modern responsive and interactive design",
+    "Component-based scalable frontend architecture"
+  ],
+  live: "https://nummatch.vercel.app/",
+  github: "#",
+  icon: "Frontend"
+},
+
+{
     id: 2,
     title: "CampFire (E-Commerce Platform)",
     description: "A deployed e-commerce application with modern UI, product listing, and cart functionality.React for frontend and integrated with a SaaS backend API for product management .",
@@ -62,7 +81,7 @@ export const content = {
   },
 
   {
-    id: 3,
+    id: 4,
     title: "Campus Bounty ",
     description: "Developed a platform where students can discover, post, and complete tasks/opportunities within campus.Enables peer-to-peer collaboration for gigs, events, and micro-tasks.",
     tech: ["React", "Tailwind CSS","Typescript", "Spring Boot "],
@@ -77,20 +96,20 @@ export const content = {
     icon: "Frontend"
   },
   {
-    id: 7,
-    title: "Zomato Clone UI",
+    id: 5,
+    title: "Zomato Clone UI (Desktop)",
     description: "Frontend clone of Zomato with focus on UI/UX design and layout structuring.",
     tech: ["HTML", "CSS", "JavaScript"],
     features: [
       "Pixel-perfect UI replication",
-      "Responsive layout",
+      "Minimal and clean design",
       "Modern design system"
     ],
     live: "https://abhibidve7241.github.io/Zomato-clone/",
     github: "https://github.com/AbhiBidve7241/Zomato-clone",
       icon: "UI"},
        {
-    id: 8,
+    id: 6,
     title: "Amazon Clone UI",
     description: "Frontend clone of Amazon with focus on UI/UX design and layout structuring.",
     tech: ["HTML", "CSS", "JavaScript"],
@@ -104,7 +123,7 @@ export const content = {
       icon: "UI"},
 
   {
-    id: 4,
+    id: 7,
     title: "React TPO Admin Panel",
     description: "Admin dashboard for training & placement operations with structured UI components.",
     tech: ["React", "Tailwind CSS","JavaScript"],
@@ -120,7 +139,7 @@ export const content = {
 
 
   {
-    id: 5,
+    id: 8,
     title: "React URL Shortener",
     description: "Utility application to shorten URLs with clean UI and efficient state handling.",
     tech: ["React", "JavaScript"],
@@ -134,7 +153,7 @@ export const content = {
   },
 
   {
-    id: 6,
+    id: 9,
     title: "Redux Cart System",
     description: "Cart management system using Redux for state management in React applications.",
     tech: ["React", "Redux"],
