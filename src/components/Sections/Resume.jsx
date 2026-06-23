@@ -23,7 +23,7 @@ const Resume = () => {
       >
         <Card className="text-center">
           <Download className="w-10 h-10 text-accent mx-auto mb-4"
-          onClick={() => window.open("https://drive.google.com/file/d/1XkvudQz5_aK5j3lq02-lKiLj6ukS7erI/view?usp=sharing", "_blank")} />
+          onClick={() => window.open("https://drive.google.com/file/d/1GXEjTACTvbUJnFkRVNrepiuI32-a6ZpA/view?usp=sharing", "_blank")} />
           <h3 className="text-2xl font-semibold text-text mb-2">Download Full Resume</h3>
           <p className="text-muted mb-6 text-sm">Get the complete PDF version of my resume</p>
                 </Card>
