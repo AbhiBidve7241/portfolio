@@ -63,6 +63,22 @@ export const content = {
   icon: "Frontend"
 },
 
+   {
+  id: 9,
+  title: "UrbanNest (Builder Website POC)",
+  description: "A complete real estate showcase platform with a modern frontend built in React, enabling project discovery, inventory viewing, and customer inquiries.",
+  tech: ["React", "Tailwind CSS", "Framer Motion", "Vite"],
+  features: [
+    "Responsive builder website",
+    "Project and inventory management showcase",
+    "Construction progress tracking",
+    "Interactive amenities and gallery sections"
+  ],
+  live: "https://realtyltr.vercel.app/",
+  github: "#",
+  icon: "Frontend"
+},
+
 {
     id: 2,
     title: "CampFire (E-Commerce Platform)",
