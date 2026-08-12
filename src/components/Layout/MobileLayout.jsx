@@ -61,7 +61,7 @@ const MobileLayout = ({ theme, toggleTheme, audioRef, playing, setPlaying }) => 
 
   const renderSection = () => {
     switch (activeApp) {
-      case 'about': return <About />;
+      case 'about': return <About setActiveSection={openApp} />;
       case 'projects': return <Projects />;
       case 'experience': return <Experience />;
       case 'skills': return <Skills />;

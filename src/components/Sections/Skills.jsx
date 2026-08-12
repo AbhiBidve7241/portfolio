@@ -375,7 +375,7 @@ const Skills = () => {
               {[
                 { title: "Problem Solving", sub: "DSA & Algorithms" },
                 { title: "Team Player", sub: "Agile & Collaboration" },
-                { title: "Languages", sub: "English, Hindi, Marathi" }
+                { title: "Languages", sub: "English, Hindi, Marathi,German(Conversational)" }
               ].map((item, i) => (
                 <div
                   key={i}

@@ -21,91 +21,92 @@ const Projects = () => {
 
       {/* GRID */}
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
-  {content.projects.map((project, index) => (
-    <motion.div
-      key={project.id}
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: index * 0.08 }}
-      className="h-full"
-    >
-      <Card
-        hover
-        className="h-full flex flex-col"
-      >
-        <CardContent className="flex-1 flex flex-col">
-          
-          {/* TITLE */}
-          <h3 className="text-lg font-semibold mb-2">
-            {project.title}
-          </h3>
+        {content.projects.map((project, index) => (
+          <motion.div
+            key={project.id}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: index * 0.08 }}
+            className="h-full"
+          >
+            <Card
+              hover
+              className="h-full flex flex-col"
+            >
+              <CardContent className="flex-1 flex flex-col">
 
-          {/* DESCRIPTION */}
-          <p className="text-muted text-sm mb-4">
-            {project.description}
-          </p>
+                {/* TITLE */}
+                <h3 className="text-lg font-semibold mb-2">
+                  {project.title}
+                </h3>
+                <p className='text-muted mb-4'>{project.category}</p>
 
-          {/* TECH STACK */}
-          <div className="mb-4 flex flex-wrap gap-2">
-            {(project.tech || []).map((tech, i) => (
-              <Badge key={i}>{tech}</Badge>
-            ))}
-          </div>
+                {/* DESCRIPTION */}
+                <p className="text-muted text-sm mb-4">
+                  {project.description}
+                </p>
 
-          {/* FEATURES */}
-          <div>
-            <h4 className="text-xs font-semibold mb-2 tracking-wider text-muted/80">
-              KEY FEATURES
-            </h4>
+                {/* TECH STACK */}
+                <div className="mb-4 flex flex-wrap gap-2">
+                  {(project.tech || []).map((tech, i) => (
+                    <Badge key={i}>{tech}</Badge>
+                  ))}
+                </div>
 
-            <ul className="space-y-1.5">
-              {(project.features || []).map((f, i) => (
-                <li
-                  key={i}
-                  className="text-xs text-muted flex gap-2"
+                {/* FEATURES */}
+                <div>
+                  <h4 className="text-xs font-semibold mb-2 tracking-wider text-muted/80">
+                    KEY FEATURES
+                  </h4>
+
+                  <ul className="space-y-1.5">
+                    {(project.features || []).map((f, i) => (
+                      <li
+                        key={i}
+                        className="text-xs text-muted flex gap-2"
+                      >
+                        <span className="text-primary/70">→</span>
+                        <span>{f}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+              </CardContent>
+
+              {/* ALWAYS AT BOTTOM */}
+              <CardFooter className="mt-auto">
+                <Button
+                  variant="primary"
+                  size="sm"
+                  className="flex-1"
+                  onClick={() =>
+                    project.live && window.open(project.live, '_blank')
+                  }
+                  disabled={!project.live}
                 >
-                  <span className="text-primary/70">→</span>
-                  <span>{f}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
+                  <ExternalLink size={14} />
+                  Live
+                </Button>
 
-        </CardContent>
-
-        {/* ALWAYS AT BOTTOM */}
-        <CardFooter className="mt-auto">
-          <Button
-            variant="primary"
-            size="sm"
-            className="flex-1"
-            onClick={() =>
-              project.live && window.open(project.live, '_blank')
-            }
-            disabled={!project.live}
-          >
-            <ExternalLink size={14} />
-            Live
-          </Button>
-
-          <Button
-            variant="secondary"
-            size="sm"
-            className="flex-1"
-            onClick={() =>
-              project.github &&
-              window.open(project.github, '_blank')
-            }
-            disabled={!project.github}
-          >
-            <GitBranch size={14} />
-            Code
-          </Button>
-        </CardFooter>
-      </Card>
-    </motion.div>
-  ))}
-</div>
+                <Button
+                  variant="secondary"
+                  size="sm"
+                  className="flex-1"
+                  onClick={() =>
+                    project.github &&
+                    window.open(project.github, '_blank')
+                  }
+                  disabled={!project.github}
+                >
+                  <GitBranch size={14} />
+                  Code
+                </Button>
+              </CardFooter>
+            </Card>
+          </motion.div>
+        ))}
+      </div>
     </div>
   );
 };

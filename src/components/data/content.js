@@ -2,244 +2,318 @@ export const content = {
   personal: {
     name: "Abhishek Bidwe",
     nickname: "Abhi",
-    title: "Full Stack Developer | React | Java",
+    title: "Full-Stack Developer | React | Java | Spring Boot",
     email: "abhishekbidwe123@gmail.com",
     phone: "+91-9607513671",
     location: "Pune, Maharashtra",
     linkedin: "https://linkedin.com/in/abhishekbidwe7241",
     github: "https://github.com/AbhiBidve7241",
-    avatar: ""
+    avatar: "/avatar.jpeg",
+    resume: "/resume.pdf"
   },
 
   stats: {
-    projects: "8+  ",
-    experience: "1.5 Years",
+    experience: "2+",
+    projects: "9+",
+    clients: "2+",
     techStack: "15+"
   },
 
   about: {
-    intro: "Passionate Full-Stack Developer specializing in building modern, scalable web applications using React.js and Spring Boot. I focus on creating pixel-perfect UIs with clean code practices and delivering seamless user experiences.",
+    intro:
+      "Full-Stack Developer focused on building modern web applications with React, Java and Spring Boot. I enjoy turning ideas into responsive interfaces, REST APIs and complete application workflows, from frontend development to backend integration and deployment.",
+
     highlights: [
-      "MCA Student at D. Y. Patil Institute",
-      "Web Developer with professional experience",
-      "Expertise in React,UI/UX, Spring Boot",
-      "Built 8+ production-ready projects"
+      "MCA student focused on full-stack web development",
+      "Hands-on experience with React, Java and Spring Boot",
+      "Built client, professional, academic and personal projects",
+      "Experienced with REST APIs, authentication, databases and responsive UI development"
     ]
   },
 
- projects: [
-  {
-    id: 1,
-    title: "SocietyOne (Full Stack Platform)",
-    description: "A complete society management platform with frontend in React and backend powered by Spring Boot, enabling community interactions and management.",
-    tech: ["React", "Spring Boot", "MongoDB", "REST API"],
-    features: [
-      "Full-stack architecture with separate frontend & backend",
-      "Society member management system",
-      "Secure API integration",
-      "Scalable backend using Spring Boot"
-    ],
-    live: "https://github.com/AbhiBidve7241/societyOne",
-    github: "https://github.com/AbhiBidve7241/societyOne",
-    icon: "FullStack"
-  },
+  projects: [
+    {
+      id: 1,
+      title: "Chintamani Homes",
+      category: "Client Project",
+      description:
+        "A modern real-estate website developed for Chintamani Homes to showcase the residential projects, available inventory, amenities and construction progress.",
+      tech: [
+        "React",
+        "Tailwind CSS",
+        "Framer Motion",
+        "Responsive UI",
+        "Vercel"
+      ],
+      features: [
+        "Residential project showcase",
+        "Interactive unit availability and inventory",
+        "Amenities and construction progress",
+        "Gallery and site documentation",
+        "Client enquiry and contact sections",
+        "Responsive design across devices"
+      ],
+      live: "https://Chintamanihomespune.in",
+      github: "#",
+      icon: "RealEstate"
+    },
 
-  
+    {
+      id: 2,
+      title: "Fitness Craze",
+      category: "Client Project",
+      description:
+        "A modern gym management web application designed with a mobile-first SaaS experience for managing members, fitness activities and gym operations.",
+      tech: [
+        "React",
+        "Vite",
+        "Tailwind CSS",
+        "Framer Motion",
+        "Context API",
+        "PWA"
+      ],
+      features: [
+        "Responsive gym management interface",
+        "Member and fitness management workflows",
+        "Mobile-first SaaS dashboard",
+        "Interactive UI and animations",
+        "Reusable React components",
+        "PWA-friendly experience"
+      ],
+      live: "https://fitnesscraze.in/",
+      github: "#",
+      icon: "Fitness"
+    },
 
-  {
-  id: 3,
-  title: "NumMatch (Matchmaking Platform POC)",
-  description: "A frontend proof-of-concept for a matchmaking platform focused on user profiles, match discovery, and event-based engagement. Built with a modern UI to simulate real-world dating platform flows and user interactions.",
-  tech: ["React", "Tailwind CSS", "JavaScript", "Vite"],
-  features: [
-    "User registration and profile UI flow",
-    "Match discovery interface (UI-based logic)",
-    "Event and restaurant listing pages",
-    "Modern responsive and interactive design",
-    "Component-based scalable frontend architecture"
+    {
+      id: 3,
+      title: "E-Commerce Platform",
+      category: "Professional Experience",
+      description:
+        "A full-stack e-commerce application developed as part of professional web development work, covering product management, shopping workflows and backend integration.",
+      tech: [
+        "React",
+        "Redux",
+        "Java",
+        "Spring Boot",
+        "MySQL",
+        "REST API"
+      ],
+      features: [
+        "Product listing and filtering",
+        "Shopping cart functionality",
+        "Authentication and user workflows",
+        "Product CRUD operations",
+        "Order processing workflow",
+        "Responsive shopping experience"
+      ],
+      live: "#",
+      github: "#",
+      icon: "ECommerce"
+    },
+
+    {
+      id: 4,
+      title: "SocietyOne",
+      category: "College Project",
+      description:
+        "A full-stack society management platform designed to simplify community administration, member management and society-related workflows.",
+      tech: [
+        "React",
+        "Spring Boot",
+        "REST API",
+        "Database",
+        "JWT"
+      ],
+      features: [
+        "Full-stack React and Spring Boot architecture",
+        "Society member management",
+        "REST API integration",
+        "Authentication and authorization",
+        "Structured backend architecture",
+        "Responsive management interface"
+      ],
+      live: "https://github.com/AbhiBidve7241/societyOne",
+      github: "https://github.com/AbhiBidve7241/societyOne",
+      icon: "FullStack"
+    },
+
+    {
+      id: 5,
+      title: "CampusBounty",
+      category: "College Project",
+      description:
+        "A campus-focused platform where students can discover, post and complete tasks and opportunities, enabling peer-to-peer collaboration through a structured task and bidding workflow.",
+      tech: [
+        "React",
+        "Spring Boot",
+        "MongoDB",
+        "REST API",
+        "JWT",
+        "Tailwind CSS"
+      ],
+      features: [
+        "Campus task and opportunity discovery",
+        "Task posting and management",
+        "Student bidding workflow",
+        "Role-based application flow",
+        "Authentication and authorization",
+        "Responsive React interface"
+      ],
+      live: "#",
+      github: "https://github.com/AbhiBidve7241/campusBountyFE",
+      icon: "Campus"
+    },
+
+    {
+      id: 6,
+      title: "React Admin Dashboard",
+      category: "React Project",
+      description:
+        "A reusable React-based administration dashboard focused on structured layouts, data presentation, navigation and responsive dashboard UI patterns.",
+      tech: [
+        "React",
+        "JavaScript",
+        "Tailwind CSS",
+        "React Router"
+      ],
+      features: [
+        "Responsive dashboard layout",
+        "Reusable UI components",
+        "Navigation and routing",
+        "Administrative interface patterns",
+        "Clean component architecture"
+      ],
+      live: "#",
+      github: "https://github.com/AbhiBidve7241/reactTPOAdmin",
+      icon: "Dashboard"
+    },
+
+    {
+      id: 7,
+      title: "React URL Shortener",
+      category: "React Project",
+      description:
+        "A lightweight URL shortening application built to practice API integration, React state management and clean utility-focused UI development.",
+      tech: [
+        "React",
+        "JavaScript",
+        "REST API"
+      ],
+      features: [
+        "URL shortening workflow",
+        "API integration",
+        "Fast user interactions",
+        "Clean responsive interface",
+        "Component-based React structure"
+      ],
+      live: "#",
+      github: "https://github.com/AbhiBidve7241/reactUrlShortner",
+      icon: "Utility"
+    },
+
+    {
+      id: 8,
+      title: "Amazon Clone",
+      category: "Initial Learning",
+      description:
+        "An early frontend project created while learning web development fundamentals, focusing on recreating the structure and visual layout of a large e-commerce interface.",
+      tech: [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      features: [
+        "E-commerce homepage layout",
+        "Product sections",
+        "Navigation structure",
+        "Responsive styling practice",
+        "Frontend fundamentals"
+      ],
+      live: "#",
+      github: "https://github.com/AbhiBidve7241/Amazon-Clone",
+      icon: "ECommerce"
+    },
+
+    {
+      id: 9,
+      title: "Zomato Clone",
+      category: "CSS Practice",
+      description:
+        "A frontend UI recreation project focused primarily on CSS layout, responsive design, visual hierarchy and practical implementation of a modern food-delivery interface.",
+      tech: [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      features: [
+        "Restaurant interface layout",
+        "Responsive page structure",
+        "CSS positioning and styling",
+        "Visual hierarchy practice",
+        "Frontend layout implementation"
+      ],
+      live: "https://abhibidve7241.github.io/Zomato-clone/",
+      github: "https://github.com/AbhiBidve7241/Zomato-clone",
+      icon: "UI"
+    }
   ],
-  live: "https://nummatch.vercel.app/",
-  github: "#",
-  icon: "Frontend"
-},
 
-   {
-  id: 9,
-  title: "UrbanNest (Builder Website POC)",
-  description: "A complete real estate showcase platform with a modern frontend built in React, enabling project discovery, inventory viewing, and customer inquiries.",
-  tech: ["React", "Tailwind CSS", "Framer Motion", "Vite"],
-  features: [
-    "Responsive builder website",
-    "Project and inventory management showcase",
-    "Construction progress tracking",
-    "Interactive amenities and gallery sections"
-  ],
-  live: "https://realtyltr.vercel.app/",
-  github: "#",
-  icon: "Frontend"
-},
-
-{
-    id: 2,
-    title: "CampFire (E-Commerce Platform)",
-    description: "A deployed e-commerce application with modern UI, product listing, and cart functionality.React for frontend and integrated with a SaaS backend API for product management .",
-    tech: ["React", "Redux", "Tailwind CSS","Appwrite","API"],
-    features: [
-      "Product listing and filtering",
-      "Shopping cart functionality",
-      "Modern responsive UI",
-      "Admin dashboard for management",
-   
-    ],
-    live: "https://campfireabhi.vercel.app/",
-    github: "https://github.com/AbhiBidve7241/campFire",
-    icon: "Store"
-  },
-
-  {
-    id: 4,
-    title: "Campus Bounty ",
-    description: "Developed a platform where students can discover, post, and complete tasks/opportunities within campus.Enables peer-to-peer collaboration for gigs, events, and micro-tasks.",
-    tech: ["React", "Tailwind CSS","Typescript", "Spring Boot "],
-    features: [
-      "Task-based UI system",
-      "Clean and responsive design",
-      "Component-based architecture",
-      "Backend integration with Spring Boot"
-    ],
-    live: "#",
-    github: "https://github.com/AbhiBidve7241/campusBountyFE",
-    icon: "Frontend"
-  },
-  {
-    id: 5,
-    title: "Zomato Clone UI (Desktop)",
-    description: "Frontend clone of Zomato with focus on UI/UX design and layout structuring.",
-    tech: ["HTML", "CSS", "JavaScript"],
-    features: [
-      "Pixel-perfect UI replication",
-      "Minimal and clean design",
-      "Modern design system"
-    ],
-    live: "https://abhibidve7241.github.io/Zomato-clone/",
-    github: "https://github.com/AbhiBidve7241/Zomato-clone",
-      icon: "UI"},
-       {
-    id: 6,
-    title: "Amazon Clone UI",
-    description: "Frontend clone of Amazon with focus on UI/UX design and layout structuring.",
-    tech: ["HTML", "CSS", "JavaScript"],
-    features: [
-      "Pixel-perfect UI replication",
-      "Responsive layout",
-      "Modern design system"  
-    ],
-    live: "https://abhibidve7241.github.io/Amazon-Clone/",
-    github: "https://github.com/AbhiBidve7241/Amazon-clone",
-      icon: "UI"},
-
-  {
-    id: 7,
-    title: "React TPO Admin Panel",
-    description: "Admin dashboard for training & placement operations with structured UI components.",
-    tech: ["React", "Tailwind CSS","JavaScript"],
-    features: [
-      "Admin dashboard UI",
-      "Data management components",
-      "Responsive layout"
-    ],
-    live: "https://github.com/AbhiBidve7241/reactTPOAdmin",
-    github: "https://github.com/AbhiBidve7241/reactTPOAdmin",
-    icon: "Dashboard"
-  },
-
-
-  {
-    id: 8,
-    title: "React URL Shortener",
-    description: "Utility application to shorten URLs with clean UI and efficient state handling.",
-    tech: ["React", "JavaScript"],
-    features: [
-      "URL shortening logic",
-      "Fast UI interactions",
-      "Minimal and clean design"
-    ],
-    github: "https://github.com/AbhiBidve7241/reactUrlShortner",
-    icon: "Utility"
-  },
-
-  {
-    id: 9,
-    title: "Redux Cart System",
-    description: "Cart management system using Redux for state management in React applications.",
-    tech: ["React", "Redux"],
-    features: [
-      "Global state management",
-      "Cart persistence",
-      "Redux architecture implementation"
-    ],
-    github: "https://github.com/AbhiBidve7241/ReduxCartPage",
-    icon: "State"
-  }
-
-      
-//   },
-
-//   {
-//     id:8,
-//     role: "Full Stack Developer (Project)",
-//   company: "College Platform System",
-//   duration: "2025",
-//   type: "Project",
-//   achievements: [
-//     "Developed a college-based platform for managing student interactions and activities",
-//     "Built full-stack system using React and Spring Boot",
-//     "Implemented secure REST APIs and structured database design",
-//     "Designed scalable UI components for academic workflows"
-//   ]
-// }
-],
   gallery: {
-  certificates: [
-    {
-      id: 1,
-      title: "React Certificate",
-      path: "/certificates/react.png"
-    }
-  ],
+    certificates: [
+      {
+        id: 1,
+        title: "React Certificate",
+        path: "/certificates/react.png"
+      }
+    ],
 
-  events: [
-    {
-      id: 1,
-      title: "Hackathon",
-      path: "/events/hack1.jpg"
-    }
-  ],
+    events: [
+      {
+        id: 1,
+        title: "Hackathon",
+        path: "/events/hack1.jpg"
+      }
+    ],
 
-  achievements: [
-    {
-      id: 1,
-      title: "Winner",
-      path: "/achievements/win.jpg"
-    }
-  ]
-},
+    achievements: [
+      {
+        id: 1,
+        title: "Winner",
+        path: "/achievements/win.jpg"
+      }
+    ],
+
+    projects: [
+      {
+        id: 1,
+        title: "Chintamani Homes",
+        path: "/gallery/projects/chintamani-homes.jpg"
+      },
+      {
+        id: 2,
+        title: "Fitness Craze",
+        path: "/gallery/projects/fitness-craze.jpg"
+      }
+    ]
+  },
 
   experience: [
     {
       id: 1,
-      role: "MCA Student",
-      company: "D. Y. Patil Institute of MCA and Management, Akurdi, Pune",
-      duration: "Sep 2025 - Present",
-      type: "Education",
+      role: "Freelance Web Developer",
+      company: "The LTR Solutions — Independent Freelance Practice",
+      duration: "2025 - Present",
+      type: "Freelance",
       achievements: [
-        "Pursuing Master of Computer Application",
-        "Focus on advanced full-stack development",
-        "Research in scalable application architecture",
-        "Active participation in tech community events"
+        "Developed websites and web applications for clients across different domains",
+        "Built responsive interfaces using React, Tailwind CSS and modern frontend technologies",
+        "Worked directly with clients on requirements, UI design, revisions and deployment",
+        "Delivered client projects including real-estate and fitness-focused web applications"
       ],
-      icon: "Education"
+      icon: "Freelance"
     },
+
     {
       id: 2,
       role: "Web Developer",
@@ -247,13 +321,14 @@ export const content = {
       duration: "Mar 2025 - Aug 2025",
       type: "Full-time",
       achievements: [
-        "Developed scalable web applications using Java Spring Boot and React.js",
-        "Built RESTful APIs secured with Spring Security and JWT tokens",
-        "Created reusable React components using Hooks and Tailwind CSS",
-        "Delivered pixel-perfect UIs in collaboration with backend teams"
+        "Developed web applications using Java, Spring Boot and React.js",
+        "Built RESTful APIs and integrated frontend applications with backend services",
+        "Implemented authentication and authorization using Spring Security and JWT",
+        "Created reusable React components and responsive interfaces"
       ],
       icon: "Web Developer"
     },
+
     {
       id: 3,
       role: "Jr. Frontend Developer",
@@ -261,51 +336,51 @@ export const content = {
       duration: "Aug 2024 - Feb 2025",
       type: "Internship",
       achievements: [
-        "Completed 4-month structured training on modern web technologies",
-        "Engineered responsive, user-friendly web applications with 100% cross-browser compatibility",
-        "Partnered with senior developers to translate business needs into scalable UI components",
-        "Reduced code inconsistencies by 75% through design reviews and best practices"
+        "Completed structured training in modern frontend development technologies",
+        "Built responsive web interfaces using HTML, CSS, JavaScript and React",
+        "Worked with senior developers to convert requirements into reusable UI components",
+        "Strengthened practical understanding of Git, component-based development and frontend best practices"
       ],
       icon: "Frontend Intern"
     }
-    
   ],
 
   skills: {
     frontend: [
-      { name: "React.js", level: 70 },
-      { name: "Tailwind CSS", level: 70},
-      { name: "JavaScript ES6+", level: 80 },
-      { name: "Redux", level: 60 },
-       { name: "HTML5/CSS3", level: 90 },
-      { name: "Bootstrap", level: 85 },
-       { name: "React Router", level: 70 },
-    
-      { name: "TypeScript", level: 80 }
-     
+      { name: "React.js" },
+      { name: "JavaScript ES6+" },
+      { name: "HTML5/CSS3" },
+      { name: "Tailwind CSS" },
+      { name: "Bootstrap" },
+      { name: "Redux" },
+      { name: "React Router" },
+      { name: "TypeScript" }
     ],
-    backend: [
-      { name: "Java", level: 80 },
-      { name: "Spring Boot", level: 75 },
-      { name: "Spring Security", level: 60 },
-      { name: "REST APIs", level: 88 },
-      { name: "JWT", level: 75 },
-      { name: "MySQL", level: 75 },
-      { name: "MongoDB", level: 78 },
-      { name: "Python", level: 70 }
-    ],
-    tools: [
-      { name: "Git/GitHub", level: 90 },
-      { name: "VS Code", level: 95 },
-      { name: "Ai Tools", level: 80 },
-      { name: "IntelliJ IDEA", level: 85 },
-      { name: "Postman", level: 88 },
-      { name: "Firebase", level: 80 },
-      { name: "Docker", level: 70 },
-      { name: "Appwrite", level: 75 },
-      { name: "Figma", level: 72 }
-    ]
 
+    backend: [
+      { name: "Java" },
+      { name: "Spring Boot" },
+      { name: "Spring Security" },
+      { name: "REST APIs" },
+      { name: "JWT" }
+    ],
+
+    database: [
+      { name: "MySQL" },
+      { name: "MongoDB" }
+    ],
+
+    tools: [
+      { name: "Git/GitHub" },
+      { name: "VS Code" },
+      { name: "IntelliJ IDEA" },
+      { name: "Postman" },
+      { name: "Docker" },
+      { name: "Firebase" },
+      { name: "Appwrite" },
+      { name: "Figma" },
+      { name: "AI-Assisted Development" }
+    ]
   },
 
   education: [
@@ -313,9 +388,10 @@ export const content = {
       degree: "Master of Computer Application",
       institution: "D. Y. Patil Institute of MCA and Management",
       location: "Akurdi, Pune",
-      duration: "Sep 2025 - Present",
+      duration: "Aug 2025 - Present",
       status: "Pursuing"
     },
+
     {
       degree: "Bachelor of Computer Science",
       institution: "D. Y. Patil College of Science and CS",
@@ -325,4 +401,3 @@ export const content = {
     }
   ]
 };
-

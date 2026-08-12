@@ -8,14 +8,14 @@ export default {
   theme: {
     extend: {
       colors: {
-  background: 'var(--color-bg)',
-  text: 'var(--color-text)',
-  muted: 'var(--color-muted)',
-  border: 'var(--color-border)',
+        background: 'var(--color-bg)',
+        text: 'var(--color-text)',
+        muted: 'var(--color-muted)',
+        border: 'var(--color-border)',
 
-  primary: 'var(--color-primary)',
-  accent: 'var(--color-accent)',
-},
+        primary: 'var(--color-primary)',
+        accent: 'var(--color-accent)',
+      },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
         mono: ['JetBrains Mono', 'monospace'],

@@ -14,8 +14,8 @@ export const Card = ({ children, className = '', hover = false, onClick }) => {
       className={`
         glass
         rounded-2xl
-        border border-black/5 dark:border-white/10
-        shadow-lg dark:shadow-2xl
+        border border-slate-200/90 dark:border-white/10
+        shadow-md dark:shadow-2xl
         transition-all duration-300
         ${hover ? 'hover:scale-[1.02] hover:shadow-xl dark:hover:shadow-[0_20px_50px_rgba(8,_112,_184,_0.2)] cursor-pointer' : ''}
         ${className}
@@ -106,10 +106,10 @@ export const Badge = ({
   className = ''
 }) => {
   const variants = {
-    default: 'bg-white/5 text-muted border border-border',
-    primary: 'bg-white/5 text-primary border border-white/10',
-    accent: 'bg-white/5 text-accent border border-white/10',
-    success: 'bg-green-500/10 text-green-400 border border-green-500/20',
+    default: 'bg-slate-100/90 dark:bg-white/5 text-text border border-slate-200 dark:border-white/10 shadow-sm',
+    primary: 'bg-primary/10 text-primary border border-primary/20 shadow-sm',
+    accent: 'bg-accent/10 text-accent border border-accent/20 shadow-sm',
+    success: 'bg-green-500/10 text-green-600 dark:text-green-400 border border-green-500/20 shadow-sm',
   };
 
   const sizes = {
