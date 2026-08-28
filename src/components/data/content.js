@@ -12,24 +12,24 @@ export const content = {
     resume: "/resume.pdf"
   },
 
-  stats: {
-    experience: "2+",
-    projects: "9+",
-    clients: "2+",
-    techStack: "15+"
-  },
+stats: {
+  experience: "1+",
+  projects: "9+",
+  clients: "2+",
+  techStack: "15+"
+},
 
-  about: {
-    intro:
-      "Full-Stack Developer focused on building modern web applications with React, Java and Spring Boot. I enjoy turning ideas into responsive interfaces, REST APIs and complete application workflows, from frontend development to backend integration and deployment.",
+ about: {
+  intro:
+    "Java Full Stack Developer focused on building scalable web applications using React.js, Spring Boot, and modern web technologies. I enjoy designing responsive user interfaces, developing secure REST APIs, and delivering complete end-to-end solutions from frontend development to backend integration.",
 
-    highlights: [
-      "MCA student focused on full-stack web development",
-      "Hands-on experience with React, Java and Spring Boot",
-      "Built client, professional, academic and personal projects",
-      "Experienced with REST APIs, authentication, databases and responsive UI development"
-    ]
-  },
+  highlights: [
+    "Bachelor of Computer Science graduate focused on full-stack web development",
+    "Hands-on experience with React.js, Java, Spring Boot, and MySQL",
+    "Built client, enterprise, and marketplace applications",
+    "Experienced with REST APIs, authentication, databases, and responsive UI development"
+  ]
+},
 
   projects: [
     {
@@ -85,86 +85,93 @@ export const content = {
       icon: "Fitness"
     },
 
-    {
-      id: 3,
-      title: "E-Commerce Platform",
-      category: "Professional Experience",
-      description:
-        "A full-stack e-commerce application developed as part of professional web development work, covering product management, shopping workflows and backend integration.",
-      tech: [
-        "React",
-        "Redux",
-        "Java",
-        "Spring Boot",
-        "MySQL",
-        "REST API"
-      ],
-      features: [
-        "Product listing and filtering",
-        "Shopping cart functionality",
-        "Authentication and user workflows",
-        "Product CRUD operations",
-        "Order processing workflow",
-        "Responsive shopping experience"
-      ],
-      live: "#",
-      github: "#",
-      icon: "ECommerce"
-    },
+   {
+  id: 3,
+  title: "OceanOne ERP System",
+  category: "Enterprise Application",
+  description:
+    "An ERP platform developed to streamline employee management, attendance tracking, payroll processing, reimbursements, sales operations, and inventory management.",
 
-    {
-      id: 4,
-      title: "SocietyOne",
-      category: "College Project",
-      description:
-        "A full-stack society management platform designed to simplify community administration, member management and society-related workflows.",
-      tech: [
-        "React",
-        "Spring Boot",
-        "REST API",
-        "Database",
-        "JWT"
-      ],
-      features: [
-        "Full-stack React and Spring Boot architecture",
-        "Society member management",
-        "REST API integration",
-        "Authentication and authorization",
-        "Structured backend architecture",
-        "Responsive management interface"
-      ],
-      live: "https://github.com/AbhiBidve7241/societyOne",
-      github: "https://github.com/AbhiBidve7241/societyOne",
-      icon: "FullStack"
-    },
+  tech: [
+    "React.js",
+    "Spring Boot",
+    "Spring Security",
+    "JWT",
+    "MySQL",
+    "JPA",
+    "Hibernate"
+  ],
 
-    {
-      id: 5,
-      title: "CampusBounty",
-      category: "College Project",
-      description:
-        "A campus-focused platform where students can discover, post and complete tasks and opportunities, enabling peer-to-peer collaboration through a structured task and bidding workflow.",
-      tech: [
-        "React",
-        "Spring Boot",
-        "MongoDB",
-        "REST API",
-        "JWT",
-        "Tailwind CSS"
-      ],
-      features: [
-        "Campus task and opportunity discovery",
-        "Task posting and management",
-        "Student bidding workflow",
-        "Role-based application flow",
-        "Authentication and authorization",
-        "Responsive React interface"
-      ],
-      live: "#",
-      github: "https://github.com/AbhiBidve7241/campusBountyFE",
-      icon: "Campus"
-    },
+  features: [
+    "Employee management module",
+    "Attendance tracking system",
+    "Payroll and reimbursement workflows",
+    "Sales and inventory management",
+    "Role-based authentication and authorization",
+    "REST API integration"
+  ],
 
+  live: "#",
+  github: "#",
+  icon: "ERP"
+},
+   {
+  id: 4,
+  title: "CHSS – Society Management System",
+  category: "Full Stack Application",
+  description:
+    "A web-based platform developed to digitize housing society operations, including resident management, maintenance billing, complaint tracking, and society communication.",
+
+  tech: [
+    "React.js",
+    "Spring Boot",
+    "Spring Security",
+    "JWT",
+    "MySQL"
+  ],
+
+  features: [
+    "Resident management",
+    "Maintenance billing",
+    "Complaint tracking",
+    "Visitor management",
+    "Notice board system",
+    "Role-based access control"
+  ],
+
+  live: "#",
+  github: "#",
+  icon: "FullStack"
+},
+   {
+  id: 5,
+  title: "CampusBounty",
+  category: "Marketplace Platform",
+  description:
+    "A full-stack marketplace platform enabling users to post tasks, place bids, collaborate, and manage task execution through a structured workflow.",
+
+  tech: [
+    "React.js",
+    "Spring Boot",
+    "MongoDB",
+    "JWT",
+    "WebSocket",
+    "Tailwind CSS"
+  ],
+
+  features: [
+    "Task posting and management",
+    "Bid placement workflow",
+    "Role-based authentication",
+    "Real-time communication",
+    "User ratings and profiles",
+    "Responsive React interface"
+  ],
+
+  live: "#",
+  github: "https://github.com/AbhiBidve7241/campusBountyFE",
+  icon: "Campus"
+},
     {
       id: 6,
       title: "React Admin Dashboard",
@@ -299,51 +306,38 @@ export const content = {
   },
 
   experience: [
-    {
-      id: 1,
-      role: "Freelance Web Developer",
-      company: "The LTR Solutions — Independent Freelance Practice",
-      duration: "2025 - Present",
-      type: "Freelance",
-      achievements: [
-        "Developed websites and web applications for clients across different domains",
-        "Built responsive interfaces using React, Tailwind CSS and modern frontend technologies",
-        "Worked directly with clients on requirements, UI design, revisions and deployment",
-        "Delivered client projects including real-estate and fitness-focused web applications"
-      ],
-      icon: "Freelance"
-    },
+  {
+    id: 1,
+    role: "Java Full Stack Developer",
+    company: "Sadhana IT Solutions",
+    duration: "Mar 2025 - Present",
+    type: "Full-time",
+    achievements: [
+      "Developed and maintained scalable web applications using React.js and Spring Boot",
+      "Designed and integrated RESTful APIs for business workflows and data management",
+      "Implemented authentication and authorization using Spring Security and JWT",
+      "Built responsive and reusable React components using Hooks, Axios, and Tailwind CSS",
+      "Integrated MySQL databases using Spring Data JPA and Hibernate"
+    ],
+    icon: "Developer"
+  },
 
-    {
-      id: 2,
-      role: "Web Developer",
-      company: "C2K IT SOLUTIONS",
-      duration: "Mar 2025 - Aug 2025",
-      type: "Full-time",
-      achievements: [
-        "Developed web applications using Java, Spring Boot and React.js",
-        "Built RESTful APIs and integrated frontend applications with backend services",
-        "Implemented authentication and authorization using Spring Security and JWT",
-        "Created reusable React components and responsive interfaces"
-      ],
-      icon: "Web Developer"
-    },
-
-    {
-      id: 3,
-      role: "Jr. Frontend Developer",
-      company: "C2K IT SOLUTIONS",
-      duration: "Aug 2024 - Feb 2025",
-      type: "Internship",
-      achievements: [
-        "Completed structured training in modern frontend development technologies",
-        "Built responsive web interfaces using HTML, CSS, JavaScript and React",
-        "Worked with senior developers to convert requirements into reusable UI components",
-        "Strengthened practical understanding of Git, component-based development and frontend best practices"
-      ],
-      icon: "Frontend Intern"
-    }
-  ],
+  {
+    id: 2,
+    role: "Frontend Developer Intern",
+    company: "C2K IT Solutions",
+    duration: "Aug 2024 - Feb 2025",
+    type: "Internship",
+    achievements: [
+      "Completed hands-on training in HTML5, CSS3, JavaScript ES6, React.js, Bootstrap, and Tailwind CSS",
+      "Developed responsive web interfaces with cross-browser compatibility",
+      "Worked with senior developers to convert requirements into reusable UI components",
+      "Participated in debugging, testing, and frontend optimization activities",
+      "Gained practical exposure to REST APIs and full-stack development workflows"
+    ],
+    icon: "Frontend Intern"
+  }
+],
 
   skills: {
     frontend: [
@@ -375,7 +369,6 @@ export const content = {
       { name: "VS Code" },
       { name: "IntelliJ IDEA" },
       { name: "Postman" },
-      { name: "Docker" },
       { name: "Firebase" },
       { name: "Appwrite" },
       { name: "Figma" },
@@ -384,13 +377,7 @@ export const content = {
   },
 
   education: [
-    {
-      degree: "Master of Computer Application",
-      institution: "D. Y. Patil Institute of MCA and Management",
-      location: "Akurdi, Pune",
-      duration: "Aug 2025 - Present",
-      status: "Pursuing"
-    },
+   
 
     {
       degree: "Bachelor of Computer Science",
