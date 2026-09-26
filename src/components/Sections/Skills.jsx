@@ -257,9 +257,11 @@ const SkillCategory = ({ title, skills, icon: IconComponent }) => {
               {/* Glass Track */}
               <div
                 className="
-                  relative h-2.5 rounded-full overflow-hidden
-                  glass
-                  border border-white/10
+                 relative h-full rounded-full
+                    bg-gradient-to-r from-indigo-500 via-cyan-400 to-purple-500
+                    shadow-[0_0_12px_rgba(56,189,248,0.65)]
+                    group-hover:brightness-110
+                    transition-all
                   backdrop-blur-md
                   shadow-inner
                 "
@@ -268,7 +270,7 @@ const SkillCategory = ({ title, skills, icon: IconComponent }) => {
                 <div className="absolute inset-0 rounded-full bg-gradient-to-b from-white/10 to-transparent pointer-events-none" />
 
                 {/* Fill */}
-                <motion.div
+                {/* <motion.div
                   initial={{ width: 0 }}
                   animate={{ width: `${skill.level}%` }}
                   transition={{
@@ -283,7 +285,7 @@ const SkillCategory = ({ title, skills, icon: IconComponent }) => {
                     group-hover:brightness-110
                     transition-all
                   "
-                >
+                > */}
                   {/* inner glass highlight on the fill */}
                   <div className="absolute inset-0 rounded-full bg-white/10 mix-blend-overlay" />
                 </motion.div>
