@@ -53,7 +53,7 @@ stats: {
         "Client enquiry and contact sections",
         "Responsive design across devices"
       ],
-      live: "https://Chintamanihomespune.in",
+      live: "https://chintamani-homes.vercel.app/",
       github: "#",
       icon: "RealEstate"
     },
